@@ -1,10 +1,18 @@
+"use client";
+
 import { FaLocationArrow } from "react-icons/fa6";
 
 import MagicButton from "./MagicButton";
 import { Spotlight } from "./ui/Spotlight";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
+import ProfileCard from "./ProfileCard";
 
 const Hero = () => {
+  const handleContactClick = () => {
+    // Scroll to contact/footer section
+    document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <div className="pb-20 pt-36">
       {/**
@@ -40,9 +48,28 @@ const Hero = () => {
         />
       </div>
 
-      <div className="flex justify-center relative my-20 z-10">
-        <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
-          <p className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80">
+      {/* Main Hero Content - Flex layout for ProfileCard and Text */}
+      <div className="flex flex-col lg:flex-row items-center justify-center gap-10 lg:gap-16 relative my-20 z-10">
+        {/* ProfileCard - Left Side */}
+        <div className="flex-shrink-0">
+          <ProfileCard
+            name="Misbahul Munir"
+            title="Data & Web Development"
+            handle="misbahulmunir"
+            status="Available for work"
+            contactText="Contact Me"
+            avatarUrl="/fotoPorto.jpg"
+            showUserInfo={true}
+            enableTilt={true}
+            enableMobileTilt={false}
+            onContactClick={handleContactClick}
+            className="scale-75 lg:scale-90"
+          />
+        </div>
+
+        {/* Text Content - Right Side */}
+        <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[50vw] flex flex-col items-center lg:items-start justify-center">
+          <p className="uppercase tracking-widest text-xs text-center lg:text-left text-blue-100 max-w-80">
             Data Analyst & Web Developer
           </p>
 
@@ -53,11 +80,11 @@ const Hero = () => {
            */}
           <TextGenerateEffect
             words="Transforming Data into Powerful Web Experiences"
-            className="text-center text-[40px] md:text-5xl lg:text-6xl"
+            className="text-center lg:text-left text-[40px] md:text-5xl lg:text-6xl"
           />
 
-          <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
-            Hi! I&apos;m Misbahul Munir, I’m Misbahul Munir, a data analyst and web developer based in Indonesia — combining data insights with modern web technologies to build meaningful digital solutions..
+          <p className="text-center lg:text-left md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
+            Hi! I&apos;m Misbahul Munir, a data analyst and web developer based in Indonesia — combining data insights with modern web technologies to build meaningful digital solutions.
           </p>
 
           <a href="#about">
@@ -74,3 +101,4 @@ const Hero = () => {
 };
 
 export default Hero;
+
