@@ -15,6 +15,8 @@ interface Project {
   iconLists: string[];
   link: string;
   category: string;
+  githubLink?: string;  // Link ke repository GitHub
+  liveLink?: string;    // Link ke live site
 }
 
 interface ProjectFilterProps {
@@ -180,7 +182,7 @@ const ProjectFilter: React.FC<ProjectFilterProps> = ({ projects }) => {
             data-category={item.category}
           >
             <PinContainer title={item.link} href={item.link}>
-              <div className="relative flex items-center justify-center sm:w-96 w-[80vw] overflow-hidden h-[20vh] lg:h-[30vh] mb-10">
+              <div className="relative flex items-center justify-center sm:w-96 w-[80vw] overflow-hidden h-[20vh] lg:h-[30vh] mb-10 group/card">
                 <div
                   className="relative w-full h-full overflow-hidden lg:rounded-3xl"
                   style={{ backgroundColor: "#13162D" }}
@@ -192,6 +194,24 @@ const ProjectFilter: React.FC<ProjectFilterProps> = ({ projects }) => {
                   alt="cover"
                   className="z-10 absolute bottom-0"
                 />
+                
+                {/* GitHub Overlay - muncul saat hover */}
+                {item.githubLink && (
+                  <a
+                    href={item.githubLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={(e) => e.stopPropagation()}
+                    className="absolute inset-0 z-20 flex items-center justify-center bg-black/70 opacity-0 group-hover/card:opacity-100 transition-opacity duration-300 lg:rounded-3xl"
+                  >
+                    <div className="flex flex-col items-center gap-3 transform scale-90 group-hover/card:scale-100 transition-transform duration-300">
+                      <div className="w-16 h-16 lg:w-20 lg:h-20 bg-white/10 backdrop-blur-sm rounded-full flex items-center justify-center border-2 border-white/30 hover:border-purple hover:bg-purple/20 transition-all">
+                        <img src="/git.svg" alt="GitHub" className="w-8 h-8 lg:w-10 lg:h-10" />
+                      </div>
+                      <span className="text-white text-sm lg:text-base font-medium">View on GitHub</span>
+                    </div>
+                  </a>
+                )}
               </div>
 
               <h1 className="font-bold lg:text-2xl md:text-xl text-base line-clamp-1">
@@ -209,26 +229,44 @@ const ProjectFilter: React.FC<ProjectFilterProps> = ({ projects }) => {
               </p>
 
               <div className="flex items-center justify-between mt-7 mb-3">
-                <div className="flex items-center">
-                  {item.iconLists.map((icon, index) => (
-                    <div
-                      key={index}
-                      className="border border-white/[.2] rounded-full bg-black lg:w-10 lg:h-10 w-8 h-8 flex justify-center items-center"
-                      style={{
-                        transform: `translateX(-${5 * index + 2}px)`,
-                      }}
-                    >
-                      <img src={icon} alt="icon" className="p-2" />
-                    </div>
-                  ))}
+                <div className="flex items-center gap-2">
+                  {/* Tech Stack Icons */}
+                  <div className="flex items-center">
+                    {item.iconLists.map((icon, index) => (
+                      <div
+                        key={index}
+                        className="border border-white/[.2] rounded-full bg-black lg:w-10 lg:h-10 w-8 h-8 flex justify-center items-center"
+                        style={{
+                          transform: `translateX(-${5 * index + 2}px)`,
+                        }}
+                      >
+                        <img src={icon} alt="icon" className="p-2" />
+                      </div>
+                    ))}
+                  </div>
                 </div>
 
-                <div className="flex justify-center items-center">
-                  <p className="flex lg:text-xl md:text-xs text-sm text-purple">
-                    Check Live Site
-                  </p>
-                  <FaLocationArrow className="ms-3" color="#CBACF9" />
-                </div>
+                {/* Live Site Link */}
+                {item.liveLink ? (
+                  <a
+                    href={item.liveLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex justify-center items-center hover:opacity-80 transition-opacity"
+                    onClick={(e) => e.stopPropagation()}
+                  >
+                    <p className="flex lg:text-xl md:text-xs text-sm text-purple">
+                      Check Live Site
+                    </p>
+                    <FaLocationArrow className="ms-3" color="#CBACF9" />
+                  </a>
+                ) : (
+                  <div className="flex justify-center items-center opacity-50">
+                    <p className="flex lg:text-xl md:text-xs text-sm text-purple">
+                      Coming Soon
+                    </p>
+                  </div>
+                )}
               </div>
             </PinContainer>
           </div>

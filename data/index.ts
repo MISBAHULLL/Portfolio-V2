@@ -79,6 +79,8 @@ export const projects = [
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
     link: "/ui.earth.com",
     category: "Web Development",
+    githubLink: "https://github.com/MISBAHULLL",  // Contoh - ganti dengan repo asli
+    liveLink: "https://example.com",              // Contoh - ganti dengan link live
   },
   {
     id: 2,
