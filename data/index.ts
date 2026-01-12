@@ -395,13 +395,21 @@ export const socialMedia = [
   {
     id: 1,
     img: "/git.svg",
+    link: "https://github.com/MISBAHULLL",
   },
   {
     id: 2,
-    img: "/twit.svg",
+    img: "/link.svg",
+    link: "https://www.linkedin.com/in/misbahul-munir-da",
   },
   {
     id: 3,
-    img: "/link.svg",
+    img: "/insta.svg",
+    link: "", // Isi link Instagram di sini
+  },
+  {
+    id: 4,
+    img: "/wha.svg",
+    link: "", // Isi link WhatsApp di sini, format: https://wa.me/628xxxxxxxxxx
   },
 ];
