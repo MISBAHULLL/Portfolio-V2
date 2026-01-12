@@ -8,7 +8,7 @@ export const navItems = [
 export const gridItems = [
   {
     id: 1,
-    title: "I prioritize client collaboration, fostering open communication ",
+    title: "I build interactive dashboards and web experiences that make complex data easy to understand. ",
     description: "",
     className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
     imgClassName: "w-full h-full",
@@ -18,7 +18,7 @@ export const gridItems = [
   },
   {
     id: 2,
-    title: "I'm very flexible with time zone communications",
+    title: "Available for remote collaboration and internships.",
     description: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-2",
     imgClassName: "",
@@ -38,7 +38,7 @@ export const gridItems = [
   },
   {
     id: 4,
-    title: "Tech enthusiast with a passion for development.",
+    title: "Informatics student specializing in data analytics and modern frontend, turning raw data into insights and building smooth, intuitive interfaces.",
     description: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-1",
     imgClassName: "",
@@ -49,12 +49,12 @@ export const gridItems = [
 
   {
     id: 5,
-    title: "Currently building a JS Animation library",
+    title: "Developing analytics dashboards & interactive web apps",
     description: "The Inside Scoop",
     className: "md:col-span-3 md:row-span-2",
-    imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
-    titleClassName: "justify-center md:justify-start lg:justify-center",
-    img: "/b5.svg",
+    imgClassName: "absolute -right-5 bottom-0 mt-4 md:w-[500px] lg:w-[550px] w-72",
+    titleClassName: "justify-start",
+    img: "/inside-scoop-dashboard.svg",
     spareImg: "/grid.svg",
   },
   {
@@ -297,33 +297,33 @@ export const projects = [
 export const testimonials = [
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "Delivered multiple end-to-end dashboards using SQL, Python, and Tableau—transforming raw datasets into clear, actionable insights.",
+    name: "Misbahul Munir",
+    title: "Data Analytics & Dashboard Development",
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "Built machine learning applications, including a corn leaf disease detector and Bitcoin forecasting model using ARIMAX and technical indicators.",
+    name: "Misbahul Munir",
+    title: "Machine Learning & Predictive Modeling",
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "Created AI-driven tools such as a Telegram crypto bot with automated chart fetching and developed RAG systems using FAISS/BM25 for intelligent retrieval.",
+    name: "Misbahul Munir",
+    title: "AI Automation & Retrieval Systems",
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "Developed modern, responsive, and interactive web applications using Next.js, React, Tailwind CSS, GSAP, and Three.js, including a 3D portfolio website.",
+    name: "Misbahul Munir",
+    title: "Frontend Web Development",
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "Contributed to the Bhatarasena robotics research team and supported mechanical operations in the Kontes Kapal Indonesia (KKI) competition.",
+    name: "Misbahul Munir",
+    title: "Robotics & Engineering Collaboration",
   },
 ];
 
@@ -363,29 +363,29 @@ export const companies = [
 export const workExperience = [
   {
     id: 1,
-    title: "Frontend Engineer Intern",
-    desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
+    title: "Data Analytics & Dashboard Development",
+    desc: "Built end-to-end analytical workflows: data cleaning, preprocessing, EDA, and visualization using Python, SQL, and Tableau.",
     className: "md:col-span-2",
     thumbnail: "/exp1.svg",
   },
   {
     id: 2,
-    title: "Mobile App Dev - JSM Tech",
-    desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
+    title: "Machine Learning & Predictive Modeling",
+    desc: "Developed machine learning solutions including disease detection models (Streamlit + ML) and Bitcoin forecasting (ARIMAX + technical indicators).",
     className: "md:col-span-2", // change to md:col-span-2
     thumbnail: "/exp2.svg",
   },
   {
     id: 3,
-    title: "Freelance App Dev Project",
-    desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
+    title: "AI, Automation & Retrieval Systems",
+    desc: "mplemented AI-driven automations, including crypto reporting Telegram bot with real-time API integration. Built RAG pipelines using FAISS/BM25, embeddings, and modular Python architecture for intelligent document retrieval.",
     className: "md:col-span-2", // change to md:col-span-2
     thumbnail: "/exp3.svg",
   },
   {
     id: 4,
-    title: "Lead Frontend Developer",
-    desc: "Developed and maintained user-facing features using modern frontend technologies.",
+    title: "Frontend Web Development",
+    desc: "Built modern, interactive web interfaces using Next.js, React, Tailwind CSS and laravel. Created responsive layouts, dynamic UI animations, and integrated APIs into real-world frontend projects.",
     className: "md:col-span-2",
     thumbnail: "/exp4.svg",
   },
