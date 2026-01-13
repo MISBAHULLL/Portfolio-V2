@@ -32,20 +32,13 @@ const Clients = () => {
                 <img
                   src={company.img}
                   alt={company.name || `tech-${company.id}`}
-                  className="md:w-8 w-6 h-auto transition-transform duration-300 group-hover:rotate-12"
+                  className="md:w-8 w-6 h-auto transition-transform duration-300"
                 />
-                {company.nameImg ? (
-                  <img
-                    src={company.nameImg}
-                    alt={company.name}
-                    width={company.id === 4 || company.id === 5 ? 100 : 150}
-                    className="md:w-24 w-20"
-                  />
-                ) : company.name ? (
+                {company.name && (
                   <span className="text-white text-sm md:text-base font-medium">
                     {company.name}
                   </span>
-                ) : null}
+                )}
               </div>
             </React.Fragment>
           ))}

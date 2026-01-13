@@ -134,6 +134,6 @@ github: adrianhajdin
 ---
 
 <div align="center">
-  <p>Built with ❤️ by Misbahul Munir</p>
+  <p>Misbahul Munir</p>
   <p>Open for internship and collaboration opportunities</p>
 </div>
