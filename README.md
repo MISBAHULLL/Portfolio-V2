@@ -129,6 +129,8 @@ portfolio/
 - 🐙 GitHub: [MISBAHULLL](https://github.com/MISBAHULLL)
 - 📧 Email: misbahulmunir36843@gmail.com
 
+Rererences: JavascriptMastery
+github: adrianhajdin
 ---
 
 <div align="center">
