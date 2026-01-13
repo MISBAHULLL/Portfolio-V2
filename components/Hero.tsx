@@ -88,7 +88,7 @@ const Hero = () => {
                 href="https://github.com/MISBAHULLL"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-12 h-12 flex justify-center items-center backdrop-filter backdrop-blur-lg bg-black-200/50 rounded-xl border border-white/[0.1] transition-all duration-300 hover:scale-110 hover:border-purple/50 hover:shadow-[0_0_20px_rgba(148,41,255,0.3)]"
+                className="cursor-target w-12 h-12 flex justify-center items-center backdrop-filter backdrop-blur-lg bg-black-200/50 rounded-xl border border-white/[0.1] transition-all duration-300 hover:scale-110 hover:border-purple/50 hover:shadow-[0_0_20px_rgba(148,41,255,0.3)]"
                 title="GitHub"
               >
                 <img src="/git.svg" alt="GitHub" width={24} height={24} />
@@ -99,7 +99,7 @@ const Hero = () => {
                 href="https://www.linkedin.com/in/misbahul-munir-da"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-12 h-12 flex justify-center items-center backdrop-filter backdrop-blur-lg bg-black-200/50 rounded-xl border border-white/[0.1] transition-all duration-300 hover:scale-110 hover:border-purple/50 hover:shadow-[0_0_20px_rgba(148,41,255,0.3)]"
+                className="cursor-target w-12 h-12 flex justify-center items-center backdrop-filter backdrop-blur-lg bg-black-200/50 rounded-xl border border-white/[0.1] transition-all duration-300 hover:scale-110 hover:border-purple/50 hover:shadow-[0_0_20px_rgba(148,41,255,0.3)]"
                 title="LinkedIn"
               >
                 <img src="/link.svg" alt="LinkedIn" width={24} height={24} />
@@ -110,7 +110,7 @@ const Hero = () => {
                 href="https://drive.google.com/drive/folders/12slijGm0YgQKhwpILpiZq1GyfazRwHHT?usp=sharing" // Ganti dengan link Google Drive CV Anda
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 px-4 h-12 backdrop-filter backdrop-blur-lg bg-black-200/50 rounded-xl border border-white/[0.1] transition-all duration-300 hover:scale-105 hover:border-purple/50 hover:shadow-[0_0_20px_rgba(148,41,255,0.3)] text-white text-sm font-medium"
+                className="cursor-target flex items-center gap-2 px-4 h-12 backdrop-filter backdrop-blur-lg bg-black-200/50 rounded-xl border border-white/[0.1] transition-all duration-300 hover:scale-105 hover:border-purple/50 hover:shadow-[0_0_20px_rgba(148,41,255,0.3)] text-white text-sm font-medium"
                 title="Download CV"
               >
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">

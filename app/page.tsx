@@ -17,9 +17,21 @@ const LightPillar = dynamic(() => import("@/components/ui/LightPillar"), {
   ssr: false,
 });
 
+// Dynamic import untuk TargetCursor (GSAP) - custom cursor
+const TargetCursor = dynamic(() => import("@/components/ui/TargetCursor"), {
+  ssr: false,
+});
+
 const Home = () => {
   return (
     <main className="relative bg-black-100 flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5">
+      {/* Custom Target Cursor */}
+      <TargetCursor 
+        spinDuration={2}
+        hideDefaultCursor={true}
+        parallaxOn={true}
+      />
+
       {/* Full Screen Light Pillar Background */}
       <div className="fixed inset-0 w-full h-screen overflow-hidden z-0 bg-[#0a0015]">
         <LightPillar
@@ -49,4 +61,5 @@ const Home = () => {
 };
 
 export default Home;
+
 

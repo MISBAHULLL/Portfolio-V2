@@ -148,7 +148,7 @@ const ProjectFilter: React.FC<ProjectFilterProps> = ({ projects }) => {
             <button
               key={category}
               onClick={() => handleFilterChange(category)}
-              className="relative px-6 py-2.5 rounded-full font-medium text-sm transition-all duration-300 border-2"
+              className="cursor-target relative px-6 py-2.5 rounded-full font-medium text-sm transition-all duration-300 border-2"
               style={{
                 backgroundColor: isActive ? colors.bg : "transparent",
                 borderColor: isActive ? colors.border : "rgba(255,255,255,0.2)",
@@ -279,7 +279,7 @@ const ProjectFilter: React.FC<ProjectFilterProps> = ({ projects }) => {
           <button
             onClick={() => handlePageChange(currentPage - 1)}
             disabled={currentPage === 0}
-            className="flex items-center gap-2 px-5 py-2.5 rounded-full font-medium text-sm transition-all duration-300 border-2 disabled:opacity-30 disabled:cursor-not-allowed"
+            className="cursor-target flex items-center gap-2 px-5 py-2.5 rounded-full font-medium text-sm transition-all duration-300 border-2 disabled:opacity-30 disabled:cursor-not-allowed"
             style={{
               borderColor: currentPage === 0 ? "rgba(255,255,255,0.1)" : "#CBACF9",
               color: currentPage === 0 ? "rgba(255,255,255,0.3)" : "#CBACF9",
@@ -295,7 +295,7 @@ const ProjectFilter: React.FC<ProjectFilterProps> = ({ projects }) => {
               <button
                 key={i}
                 onClick={() => handlePageChange(i)}
-                className="w-10 h-10 rounded-full font-medium text-sm transition-all duration-300"
+                className="cursor-target w-10 h-10 rounded-full font-medium text-sm transition-all duration-300"
                 style={{
                   backgroundColor: currentPage === i ? "#CBACF9" : "rgba(255,255,255,0.1)",
                   color: currentPage === i ? "#000" : "rgba(255,255,255,0.7)",
@@ -309,7 +309,7 @@ const ProjectFilter: React.FC<ProjectFilterProps> = ({ projects }) => {
           <button
             onClick={() => handlePageChange(currentPage + 1)}
             disabled={currentPage === totalPages - 1}
-            className="flex items-center gap-2 px-5 py-2.5 rounded-full font-medium text-sm transition-all duration-300 border-2 disabled:opacity-30 disabled:cursor-not-allowed"
+            className="cursor-target flex items-center gap-2 px-5 py-2.5 rounded-full font-medium text-sm transition-all duration-300 border-2 disabled:opacity-30 disabled:cursor-not-allowed"
             style={{
               borderColor: currentPage === totalPages - 1 ? "rgba(255,255,255,0.1)" : "#CBACF9",
               color: currentPage === totalPages - 1 ? "rgba(255,255,255,0.3)" : "#CBACF9",

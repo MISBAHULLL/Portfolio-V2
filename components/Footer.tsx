@@ -42,7 +42,7 @@ const Footer = () => {
               href={info.link || "#"}
               target="_blank"
               rel="noopener noreferrer"
-              className="w-10 h-10 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75 bg-black-200 rounded-lg border border-black-300 hover:scale-110 transition-transform"
+              className="cursor-target w-10 h-10 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75 bg-black-200 rounded-lg border border-black-300 hover:scale-110 transition-transform"
             >
               <img src={info.img} alt="icons" width={20} height={20} />
             </a>
