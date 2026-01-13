@@ -3,8 +3,13 @@
 import { useState } from "react";
 import { IoCopyOutline } from "react-icons/io5";
 import Image from "next/image";
+import dynamic from "next/dynamic";
 
-import { Player } from "@lottiefiles/react-lottie-player";
+// Dynamic import untuk Lottie Player (SSR fix)
+const Player = dynamic(
+  () => import("@lottiefiles/react-lottie-player").then((mod) => mod.Player),
+  { ssr: false }
+);
 
 import { cn } from "@/lib/utils";
 
