@@ -72,13 +72,58 @@ const Hero = () => {
             to build meaningful digital solutions.
           </p>
 
-          <a href="#about">
-            <MagicButton
-              title="View my projects"
-              icon={<FaLocationArrow />}
-              position="right"
-            />
-          </a>
+          <div className="flex flex-col sm:flex-row items-end gap-4">
+            <a href="#about">
+              <MagicButton
+                title="View my projects"
+                icon={<FaLocationArrow />}
+                position="right"
+              />
+            </a>
+
+            {/* Social Links */}
+            <div className="flex items-center gap-3">
+              {/* GitHub */}
+              <a
+                href="https://github.com/MISBAHULLL"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-12 h-12 flex justify-center items-center backdrop-filter backdrop-blur-lg bg-black-200/50 rounded-xl border border-white/[0.1] transition-all duration-300 hover:scale-110 hover:border-purple/50 hover:shadow-[0_0_20px_rgba(148,41,255,0.3)]"
+                title="GitHub"
+              >
+                <img src="/git.svg" alt="GitHub" width={24} height={24} />
+              </a>
+
+              {/* LinkedIn */}
+              <a
+                href="https://www.linkedin.com/in/misbahul-munir-da"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-12 h-12 flex justify-center items-center backdrop-filter backdrop-blur-lg bg-black-200/50 rounded-xl border border-white/[0.1] transition-all duration-300 hover:scale-110 hover:border-purple/50 hover:shadow-[0_0_20px_rgba(148,41,255,0.3)]"
+                title="LinkedIn"
+              >
+                <img src="/link.svg" alt="LinkedIn" width={24} height={24} />
+              </a>
+
+              {/* CV Download */}
+              <a
+                href="https://drive.google.com/drive/folders/12slijGm0YgQKhwpILpiZq1GyfazRwHHT?usp=sharing" // Ganti dengan link Google Drive CV Anda
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 px-4 h-12 backdrop-filter backdrop-blur-lg bg-black-200/50 rounded-xl border border-white/[0.1] transition-all duration-300 hover:scale-105 hover:border-purple/50 hover:shadow-[0_0_20px_rgba(148,41,255,0.3)] text-white text-sm font-medium"
+                title="Download CV"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                  <polyline points="14 2 14 8 20 8"></polyline>
+                  <line x1="16" y1="13" x2="8" y2="13"></line>
+                  <line x1="16" y1="17" x2="8" y2="17"></line>
+                  <polyline points="10 9 9 9 8 9"></polyline>
+                </svg>
+                <span>CV</span>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
