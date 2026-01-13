@@ -53,7 +53,7 @@ export default function Lanyard({
   }, []);
 
   return (
-    <div className="relative z-10 w-full h-full flex justify-center items-center">
+    <div className="relative z-0 w-full h-full flex justify-center items-center overflow-visible">
       <Canvas
         camera={{ position, fov }}
         dpr={[1, isMobile ? 1.5 : 2]}
@@ -106,7 +106,6 @@ interface BandProps {
 }
 
 function Band({ maxSpeed = 50, minSpeed = 0, isMobile = false }: BandProps) {
-  // Using "any" for refs since the exact types depend on Rapier's internals
   const band = useRef<any>(null);
   const fixed = useRef<any>(null);
   const j1 = useRef<any>(null);
@@ -136,6 +135,7 @@ function Band({ maxSpeed = 50, minSpeed = 0, isMobile = false }: BandProps) {
   const [dragged, drag] = useState<false | THREE.Vector3>(false);
   const [hovered, hover] = useState(false);
 
+  // Rope joints with length 1 (original values)
   useRopeJoint(fixed, j1, [[0, 0, 0], [0, 0, 0], 1]);
   useRopeJoint(j1, j2, [[0, 0, 0], [0, 0, 0], 1]);
   useRopeJoint(j2, j3, [[0, 0, 0], [0, 0, 0], 1]);
@@ -165,9 +165,7 @@ function Band({ maxSpeed = 50, minSpeed = 0, isMobile = false }: BandProps) {
         z: vec.z - dragged.z
       });
     }
-    
-    // Check all refs are ready before updating curve
-    if (fixed.current && j1.current && j2.current && j3.current && card.current && band.current) {
+    if (fixed.current) {
       [j1, j2].forEach(ref => {
         if (!ref.current.lerped) ref.current.lerped = new THREE.Vector3().copy(ref.current.translation());
         const clampedDistance = Math.max(0.1, Math.min(1, ref.current.lerped.distanceTo(ref.current.translation())));
@@ -176,23 +174,11 @@ function Band({ maxSpeed = 50, minSpeed = 0, isMobile = false }: BandProps) {
           delta * (minSpeed + clampedDistance * (maxSpeed - minSpeed))
         );
       });
-      
-      // Get translations
-      const j3Trans = j3.current.translation();
-      const j2Lerped = j2.current.lerped;
-      const j1Lerped = j1.current.lerped;
-      const fixedTrans = fixed.current.translation();
-      
-      // Only update if all values are valid (not NaN)
-      if (j3Trans && j2Lerped && j1Lerped && fixedTrans &&
-          !isNaN(j3Trans.x) && !isNaN(j2Lerped.x) && !isNaN(j1Lerped.x) && !isNaN(fixedTrans.x)) {
-        curve.points[0].copy(j3Trans);
-        curve.points[1].copy(j2Lerped);
-        curve.points[2].copy(j1Lerped);
-        curve.points[3].copy(fixedTrans);
-        band.current.geometry.setPoints(curve.getPoints(isMobile ? 16 : 32));
-      }
-      
+      curve.points[0].copy(j3.current.translation());
+      curve.points[1].copy(j2.current.lerped);
+      curve.points[2].copy(j1.current.lerped);
+      curve.points[3].copy(fixed.current.translation());
+      band.current.geometry.setPoints(curve.getPoints(isMobile ? 16 : 32));
       ang.copy(card.current.angvel());
       rot.copy(card.current.rotation());
       card.current.setAngvel({ x: ang.x, y: ang.y - rot.y * 0.25, z: ang.z });
@@ -256,11 +242,11 @@ function Band({ maxSpeed = 50, minSpeed = 0, isMobile = false }: BandProps) {
         <meshLineMaterial
           color="white"
           depthTest={false}
-          resolution={isMobile ? [800, 1600] : [1920, 1080]}
+          resolution={isMobile ? [1000, 2000] : [1000, 1000]}
           useMap
           map={texture}
           repeat={[-4, 1]}
-          lineWidth={3}
+          lineWidth={1}
         />
       </mesh>
     </>

@@ -78,10 +78,10 @@ const Hero = () => {
           />
 
           {/* Container untuk Lanyard 3D */}
-          <div className="w-[350px] h-[500px] lg:w-[400px] lg:h-[550px] -mt-8 relative">
+          <div className="w-[350px] h-[500px] lg:w-[400px] lg:h-[550px] -mt-8 relative overflow-visible">
             <Lanyard 
-              position={[0, 2, 20]} 
-              fov={25} 
+              position={[0, 0, 30]} 
+              fov={20} 
               gravity={[0, -40, 0]} 
               transparent={true} 
             />
