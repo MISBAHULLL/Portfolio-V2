@@ -25,21 +25,27 @@ const Clients = () => {
           />
         </div>
 
-        <div className="flex flex-wrap items-center justify-center gap-4 md:gap-16 max-lg:mt-10">
+        <div className="flex flex-wrap items-center justify-center gap-4 md:gap-8 max-lg:mt-10">
           {companies.map((company) => (
             <React.Fragment key={company.id}>
-              <div className="flex md:max-w-60 max-w-32 gap-2">
+              <div className="flex items-center md:max-w-60 max-w-32 gap-2 bg-black-200/50 rounded-lg px-3 py-2 border border-white/[0.1]">
                 <img
                   src={company.img}
-                  alt={company.name}
-                  className="md:w-10 w-5"
+                  alt={company.name || `tech-${company.id}`}
+                  className="md:w-8 w-6 h-auto"
                 />
-                <img
-                  src={company.nameImg}
-                  alt={company.name}
-                  width={company.id === 4 || company.id === 5 ? 100 : 150}
-                  className="md:w-24 w-20"
-                />
+                {company.nameImg ? (
+                  <img
+                    src={company.nameImg}
+                    alt={company.name}
+                    width={company.id === 4 || company.id === 5 ? 100 : 150}
+                    className="md:w-24 w-20"
+                  />
+                ) : company.name ? (
+                  <span className="text-white text-sm md:text-base font-medium">
+                    {company.name}
+                  </span>
+                ) : null}
               </div>
             </React.Fragment>
           ))}

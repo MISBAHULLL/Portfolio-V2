@@ -76,7 +76,7 @@ export const projects = [
     title: "Batik Indonesia – Modern E-Commerce Website",
     des: "A modern e-commerce website showcasing Indonesian Batik products with a clean and responsive interface.",
     img: "/p1_Batik.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
+    iconLists: ["/html5.svg", "/css3.svg", "/javascript.svg", "/bootstrap.svg"],
     link: "/batik.indonesia",
     category: "Web Development",
     githubLink: "git@github.com:MISBAHULLL/Ecommerce-batik.git",  // Contoh - ganti dengan repo asli
@@ -87,7 +87,7 @@ export const projects = [
     title: "Interactive Area Games – Modern Frontend Experience",
     des: "An interactive game-themed frontend website featuring smooth animations and responsive UI.",
     img: "/p2_Stream.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
+    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/html5.svg", "/css3.svg", "/javascript.svg", "/nodejs.svg", "/vite.svg"],
     link: "/Stream",
     category: "Web Development",
     githubLink: "https://github.com/MISBAHULLL/Frontend-Area-games.git",
@@ -98,7 +98,7 @@ export const projects = [
     title: "AI Speak – Interactive AI Voice & Chat Interface",
     des: "An AI-driven website with API Puter.js and responsive design.",
     img: "/p3_Ai.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
+    iconLists: ["/html5.svg", "/re.svg", "/tail.svg", "/nodejs.svg", "/vite.svg", "/api.svg"],
     link: "/AI_Speak",
     category: "Web Development",
     githubLink: "git@github.com:MISBAHULLL/Ai-Speak.git",
@@ -109,7 +109,7 @@ export const projects = [
     title: "Personal Portfolio – Modern Animated Developer Showcase",
     des: "A modern developer portfolio with interactive animations and a fully responsive design.",
     img: "/p4_Portfolio1.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
+    iconLists: ["/html5.svg", "/css3.svg", "/javascript.svg"],
     link: "/Portfolio",
     category: "Web Development",
     githubLink: "https://github.com/MISBAHULLL/Portfolio.git",  // Contoh - ganti dengan repo asli
@@ -120,7 +120,7 @@ export const projects = [
     title: "CBR Smartphone Recommendation System",
     des: "A CBR-based system that recommends smartphones based on user-input specifications.",
     img: "/p5_CBR.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/fm.svg"],
+    iconLists: ["/re.svg", "/tail.svg", "/nodejs.svg", "/vite.svg", "/api.svg", "/python.svg"],
     link: "/CBR_Rekomendasi_Pembelian_HP",
     category: "Web Development",
     githubLink: "https://github.com/MISBAHULLL/CBR-Rekomendasi-Pembelian-HP-.git",  // Contoh - ganti dengan repo asli
@@ -160,7 +160,7 @@ export const projects = [
     title: "Sales Analysis Dashboard",
     des: "A complete sales data analysis project featuring insights, visualizations, and performance metrics.",
     img: "/p9_Analisis.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
+    iconLists: ["/tableau.svg", "/colab.svg", "/python.svg", "/jupyter.svg", "/kaggle.svg", "/excel.svg"],
     link: "/ui.aiimg.com",
     category: "Data & ML",
     githubLink: "https://github.com/MISBAHULLL/Sales-Analysis",  // Contoh - ganti dengan repo asli
@@ -171,7 +171,7 @@ export const projects = [
     title: "Corn Leaf Disease Detection (Streamlit App)",
     des: "A Streamlit app that classifies corn leaf diseases using machine learning and image analysis.",
     img: "/p10_Diseases.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
+    iconLists: ["/python.svg", "/streamlit.svg", "/api.svg", "/colab.svg", "/jupyter.svg", "/kaggle.svg"],
     link: "/ui.analytics.com",
     category: "Data & ML",
     githubLink: "https://github.com/MISBAHULLL/Simple-corn-leaf-disease-using-Streamlit-Python.git",  // Contoh - ganti dengan repo asli
@@ -179,10 +179,10 @@ export const projects = [
   },
   {
     id: 8,
-    title: "RAG-Based Information Retrieval System",
+    title: "RAG-Based Information Retrieval System CLI",
     des: "A Retrieval-Augmented Generation system using embeddings and vector search for precise document responses.",
     img: "/p11_rag_news.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/c.svg", "/fm.svg"],
+    iconLists: ["/python.svg", "/api.svg", "/kaggle.svg", "/jupyter.svg", "/colab.svg", "/huggingface.svg"],
     link: "/RAG_Model_CLI",
     category: "Data & ML",
     githubLink: "https://github.com/MISBAHULLL/Information-Retrieval-RAG.git",  // Contoh - ganti dengan repo asli
@@ -193,7 +193,7 @@ export const projects = [
     title: "Telegram Automation Bot",
     des: "A functional Telegram bot for automated messaging, alerts, and custom command handling.",
     img: "/p12_Bottele.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
+    iconLists: ["/python.svg", "/api.svg", "/vscode.svg", "/telegram.svg"],
     link: "/Bot_Telegram",
     category: "Data & ML",
     githubLink: "https://github.com/MISBAHULLL/Bot-Tele.git",  // Contoh - ganti dengan repo asli
@@ -204,7 +204,7 @@ export const projects = [
     title: "Indodax Crypto Mining Dashboard",
     des: "A simple dashboard that fetches Indodax API data, displays price analytics, and monitors market movements.",
     img: "/p13_miningindo.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/fm.svg"],
+    iconLists: ["/php.svg", "/api.svg", "/vscode.svg", "/mysql.svg", "/sql-database.svg", "/laragon.svg"],
     link: "/Dashboard_Indodax",
     category: "Data & ML",
     githubLink: "https://github.com/MISBAHULLL/Dashboard-sederhana-Mining-API-Indodax.git",  // Contoh - ganti dengan repo asli
@@ -215,7 +215,7 @@ export const projects = [
     title: "Bitcoin Price Forecasting Model",
     des: "A time-series forecasting project using statistical models and sentiment analysis to predict Bitcoin prices.",
     img: "/p14_btcForcasting.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/c.svg", "/fm.svg"],
+    iconLists: ["/python.svg", "/plotly.svg", "/vscode.svg", "/api.svg"],
     link: "/BTC_Forecasting",
     category: "Data & ML",
     githubLink: "https://github.com/MISBAHULLL/Bitcoin-Forecasting.git",  // Contoh - ganti dengan repo asli
@@ -353,33 +353,143 @@ export const testimonials = [
 export const companies = [
   {
     id: 1,
-    name: "cloudinary",
-    img: "/cloud.svg",
-    nameImg: "/cloudName.svg",
+    name: "HTML5",
+    img: "/html5.svg",
   },
   {
     id: 2,
-    name: "appwrite",
-    img: "/app.svg",
-    nameImg: "/appName.svg",
+    name: "CSS3",
+    img: "/css3.svg",
   },
   {
     id: 3,
-    name: "HOSTINGER",
-    img: "/host.svg",
-    nameImg: "/hostName.svg",
+    name: "Bootstrap",
+    img: "/bootstrap.svg",
   },
   {
     id: 4,
-    name: "stream",
-    img: "/s.svg",
-    nameImg: "/streamName.svg",
+    name: "Figma",
+    img: "/figma.svg",
   },
   {
     id: 5,
-    name: "docker.",
-    img: "/dock.svg",
-    nameImg: "/dockerName.svg",
+    name: "Tailwind",
+    img: "/tail.svg",
+  },
+  {
+    id: 6,
+    name: "TypeScript",
+    img: "/ts.svg",
+  },
+  {
+    id: 7,
+    name: "JavaScript",
+    img: "/javascript.svg",
+  },
+  {
+    id: 8,
+    name: "React",
+    img: "/re.svg",
+  },
+  {
+    id: 9,
+    name: "Next.js",
+    img: "/next.svg",
+  },
+  {
+    id: 10,
+    name: "Laravel",
+    img: "/laravel.svg",
+  },
+  {
+    id: 11,
+    name: "PHP",
+    img: "/php.svg",
+  },
+  {
+    id: 12,
+    name: "Git",
+    img: "/git.svg",
+  },
+  {
+    id: 13,
+    name: "Colab",
+    img: "/colab.svg",
+  },
+  {
+    id: 14,
+    name: "Excel",
+    img: "/excel.svg",
+  },
+  {
+    id: 15,
+    name: "Tableau",
+    img: "/tableau.svg",
+  },
+  {
+    id: 16,
+    name: "Python",
+    img: "/python.svg",
+  },
+  {
+    id: 17,
+    name: "SQL",
+    img: "/sql-database.svg",
+  },
+  {
+    id: 18,
+    name: "Jupyter",
+    img: "/jupyter.svg",
+  },
+  {
+    id: 19,
+    name: "Kaggle",
+    img: "/kaggle.svg",
+  },
+  {
+    id: 20,
+    name: "Laragon",
+    img: "/laragon.svg",
+  },
+  {
+    id: 21,
+    name: "MySQL",
+    img: "/mysql.svg",
+  },
+  {
+    id: 22,
+    name: "PostgreSQL",
+    img: "/postgresql.svg",
+  },
+  {
+    id: 23,
+    name: "Node.js",
+    img: "/nodejs.svg",
+  },
+  {
+    id: 24,
+    name: "Power BI",
+    img: "/power bi.svg",
+  },
+  {
+    id: 25,
+    name: "Plotly",
+    img: "/plotly.svg",
+  },
+  {
+    id: 26,
+    name: "Streamlit",
+    img: "/streamlit.svg",
+  },
+  {
+    id: 27,
+    name: "Vite",
+    img: "/vite.svg",
+  },
+  {
+    id: 28,
+    name: "VS Code",
+    img: "/vscode.svg",
   },
 ];
 
