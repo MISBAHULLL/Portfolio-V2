@@ -1,7 +1,7 @@
 export const navItems = [
   { name: "About", link: "#about" },
   { name: "Projects", link: "#projects" },
-  { name: "Testimonials", link: "#testimonials" },
+  { name: "KeyAchievements", link: "#keyachievements" },
   { name: "Contact", link: "#contact" },
 ];
 
@@ -242,24 +242,24 @@ export const projects = [
   // },
 
   // Blockchain - 8 projects
-  {
-    id: 12,
-    title: "NFT Marketplace",
-    des: "Decentralized marketplace for minting, buying, and selling digital collectibles.",
-    img: "/p4.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
-    link: "/ui.nft.com",
-    category: "Blockchain",
-  },
-  {
-    id: 13,
-    title: "DeFi Lending Protocol",
-    des: "Decentralized finance platform for lending and borrowing crypto assets.",
-    img: "/p1.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/fm.svg"],
-    link: "/ui.defi.com",
-    category: "Blockchain",
-  },
+  // {
+  //   id: 12,
+  //   title: "NFT Marketplace",
+  //   des: "Decentralized marketplace for minting, buying, and selling digital collectibles.",
+  //   img: "/p4.svg",
+  //   iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
+  //   link: "/ui.nft.com",
+  //   category: "Blockchain",
+  // },
+  // {
+  //   id: 13,
+  //   title: "DeFi Lending Protocol",
+  //   des: "Decentralized finance platform for lending and borrowing crypto assets.",
+  //   img: "/p1.svg",
+  //   iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/fm.svg"],
+  //   link: "/ui.defi.com",
+  //   category: "Blockchain",
+  // },
   // {
   //   id: 19,
   //   title: "Crypto Wallet Application",
@@ -317,7 +317,7 @@ export const projects = [
 ];
 
 
-export const testimonials = [
+export const keyachievements = [
   {
     quote:
       "Delivered multiple end-to-end dashboards using SQL, Python, and Tableau—transforming raw datasets into clear, actionable insights.",
@@ -376,11 +376,11 @@ export const companies = [
     name: "Tailwind",
     img: "/tail.svg",
   },
-  {
-    id: 6,
-    name: "TypeScript",
-    img: "/ts.svg",
-  },
+  // {
+  //   id: 6,
+  //   name: "TypeScript",
+  //   img: "/ts.svg",
+  // },
   {
     id: 7,
     name: "JavaScript",
@@ -431,63 +431,63 @@ export const companies = [
     name: "Python",
     img: "/python.svg",
   },
+  // {
+  //   id: 17,
+  //   name: "SQL",
+  //   img: "/sql-database.svg",
+  // },
   {
     id: 17,
-    name: "SQL",
-    img: "/sql-database.svg",
-  },
-  {
-    id: 18,
     name: "Jupyter",
     img: "/jupyter.svg",
   },
   {
-    id: 19,
+    id: 18,
     name: "Kaggle",
     img: "/kaggle.svg",
   },
+  // {
+  //   id: 20,
+  //   name: "Laragon",
+  //   img: "/laragon.svg",
+  // },
   {
-    id: 20,
-    name: "Laragon",
-    img: "/laragon.svg",
-  },
-  {
-    id: 21,
+    id: 19,
     name: "MySQL",
     img: "/mysql.svg",
   },
   {
-    id: 22,
+    id: 20,
     name: "PostgreSQL",
     img: "/postgresql.svg",
   },
   {
-    id: 23,
+    id: 21,
     name: "Node.js",
     img: "/nodejs.svg",
   },
   {
-    id: 24,
+    id: 22,
     name: "Power BI",
     img: "/power bi.svg",
   },
+  // {
+  //   id: 25,
+  //   name: "Plotly",
+  //   img: "/plotly.svg",
+  // },
+  // {
+  //   id: 26,
+  //   name: "Streamlit",
+  //   img: "/streamlit.svg",
+  // },
   {
-    id: 25,
-    name: "Plotly",
-    img: "/plotly.svg",
-  },
-  {
-    id: 26,
-    name: "Streamlit",
-    img: "/streamlit.svg",
-  },
-  {
-    id: 27,
+    id: 23,
     name: "Vite",
     img: "/vite.svg",
   },
   {
-    id: 28,
+    id: 24,
     name: "VS Code",
     img: "/vscode.svg",
   },
@@ -511,7 +511,7 @@ export const workExperience = [
   {
     id: 3,
     title: "AI, Automation & Retrieval Systems",
-    desc: "mplemented AI-driven automations, including crypto reporting Telegram bot with real-time API integration. Built RAG pipelines using FAISS/BM25, embeddings, and modular Python architecture for intelligent document retrieval.",
+    desc: "Implemented AI-driven automations, including crypto reporting Telegram bot with real-time API integration. Built RAG pipelines using FAISS/BM25, embeddings, and modular Python architecture for intelligent document retrieval.",
     className: "md:col-span-2", // change to md:col-span-2
     thumbnail: "/exp3.svg",
   },
@@ -538,11 +538,11 @@ export const socialMedia = [
   {
     id: 3,
     img: "/insta.svg",
-    link: "", // Isi link Instagram di sini
+    link: "https://www.instagram.com/_msbhh_?igsh=MXVhMjZ2cTZjZWtyeQ==", // Isi link Instagram di sini
   },
   {
     id: 4,
     img: "/wha.svg",
-    link: "", // Isi link WhatsApp di sini, format: https://wa.me/628xxxxxxxxxx
+    link: "https://wa.me/qr/G5GWYU63DYVFD1", // Isi link WhatsApp di sini, format: https://wa.me/628xxxxxxxxxx
   },
 ];

@@ -24,7 +24,7 @@ interface ProjectFilterProps {
 }
 
 const ITEMS_PER_PAGE = 4;
-const CATEGORIES = ["All", "Web Development", "Data & ML", "Blockchain"];
+const CATEGORIES = ["All", "Web Development", "Mobile App", "Data & ML", "Blockchain"];
 
 // Category colors matching project theme
 const categoryColors: Record<string, { bg: string; border: string; text: string }> = {
@@ -37,6 +37,11 @@ const categoryColors: Record<string, { bg: string; border: string; text: string 
     bg: "rgba(59, 130, 246, 0.1)", 
     border: "#3B82F6", 
     text: "#3B82F6" 
+  },
+  "Mobile App": { 
+    bg: "rgba(63, 130, 238, 0.1)", 
+    border: "#2df7f7ff", 
+    text: "#2df7f7ff" 
   },
   "Data & ML": { 
     bg: "rgba(16, 185, 129, 0.1)", 
