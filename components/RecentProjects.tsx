@@ -1,5 +1,6 @@
 "use client";
 
+import { Suspense } from "react";
 import { projects } from "@/data";
 import ProjectFilter from "./ProjectFilter";
 
@@ -12,7 +13,10 @@ const RecentProjects = () => {
       </h1>
       
       <div className="mt-10">
-        <ProjectFilter projects={projects} />
+        {/* Suspense boundary required for useSearchParams in Next.js 14 */}
+        <Suspense fallback={<div className="text-center text-white/50">Loading projects...</div>}>
+          <ProjectFilter projects={projects} />
+        </Suspense>
       </div>
     </div>
   );
