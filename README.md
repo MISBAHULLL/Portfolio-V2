@@ -120,14 +120,14 @@ portfolio/
 └── ...
 ```
 
-## <a name="contact">📬 Contact</a>
+<!-- ## <a name="contact">📬 Contact</a>
 
 **Misbahul Munir**
 
 - 🌐 Portfolio: [Coming Soon]
 - 💼 LinkedIn: [misbahul-munir-da](https://www.linkedin.com/in/misbahul-munir-da)
 - 🐙 GitHub: [MISBAHULLL](https://github.com/MISBAHULLL)
-- 📧 Email: misbahulmunir36843@gmail.com
+- 📧 Email: misbahulmunir36843@gmail.com -->
 
 Rererences: JavascriptMastery
 github: adrianhajdin

@@ -1,6 +1,7 @@
 "use client";
 
-import React, { useRef, useState, useMemo, useCallback } from "react";
+import React, { useRef, useState, useMemo, useCallback, useEffect } from "react";
+import { useSearchParams, useRouter } from "next/navigation";
 import gsap from "gsap";
 import { FaLocationArrow, FaChevronLeft, FaChevronRight } from "react-icons/fa6";
 
@@ -55,12 +56,46 @@ const categoryColors: Record<string, { bg: string; border: string; text: string 
   },
 };
 
+// URL parameter aliases for easy sharing
+// Example: ?filter=data → "Data & ML", ?filter=web → "Web Development"
+const FILTER_ALIASES: Record<string, string> = {
+  "all": "All",
+  "web": "Web Development",
+  "webdev": "Web Development",
+  "mobile": "Mobile App",
+  "mobileapp": "Mobile App", 
+  "data": "Data & ML",
+  "dataml": "Data & ML",
+  "ml": "Data & ML",
+  "blockchain": "Blockchain",
+  "crypto": "Blockchain",
+};
+
 const ProjectFilter: React.FC<ProjectFilterProps> = ({ projects }) => {
   const containerRef = useRef<HTMLDivElement | null>(null);
   const itemsRef = useRef<HTMLDivElement | null>(null);
   const [activeFilter, setActiveFilter] = useState("All");
   const [currentPage, setCurrentPage] = useState(0);
   const [isAnimating, setIsAnimating] = useState(false);
+  
+  // Next.js hooks for URL handling
+  const searchParams = useSearchParams();
+  const router = useRouter();
+  
+  // Read URL parameter on mount and set initial filter
+  useEffect(() => {
+    const filterParam = searchParams.get("filter");
+    if (filterParam) {
+      // Convert to lowercase and find matching category
+      const normalizedParam = filterParam.toLowerCase();
+      const matchedCategory = FILTER_ALIASES[normalizedParam] || 
+        CATEGORIES.find(cat => cat.toLowerCase() === normalizedParam);
+      
+      if (matchedCategory && CATEGORIES.includes(matchedCategory)) {
+        setActiveFilter(matchedCategory);
+      }
+    }
+  }, [searchParams]);
 
   // Filter projects based on active category
   const filteredProjects = useMemo(() => {
