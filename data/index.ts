@@ -126,15 +126,17 @@ export const projects = [
     githubLink: "https://github.com/MISBAHULLL/CBR-Rekomendasi-Pembelian-HP-.git",  // Contoh - ganti dengan repo asli
     liveLink: "https://cbr-rekomendasi-pembelian-hp.vercel.app/",              // Contoh - ganti dengan link live
   },
-  // {
-  //   id: 6,
-  //   title: "Portfolio Website Builder",
-  //   des: "Drag-and-drop portfolio builder with customizable templates and themes.",
-  //   img: "/p3.svg",
-  //   iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
-  //   link: "/ui.portfolio.com",
-  //   category: "Web Development",
-  // },
+ {
+    id: 6,
+    title: "Logistik Market",
+    des: "Modern logistics marketplace",
+    img: "/LogiMarket.svg",
+    iconLists: ["/laravel.svg", "/tail.svg", "/postgresql.svg", "/ts.svg"],
+    link: "/logistics_market",
+    category: "Web Development",
+    githubLink: "https://github.com/MISBAHULLL/LogiMarket.git",  // Contoh - ganti dengan repo asli
+    liveLink: "",              // Contoh - ganti dengan link live
+  },
   // {
   //   id: 7,
   //   title: "Task Management Dashboard",
@@ -154,9 +156,22 @@ export const projects = [
   //   category: "Web Development",
   // },
 
+  // Mobile App - projects
+  {
+    id: 7,
+    title: "Course Online", 
+    des: "UI UX course online in figma.", 
+    img: "/CoureOnline.svg", 
+    iconLists: ["/figma.svg"], 
+    link: "/UI UX Course Online",
+    category: "Mobile App",
+    figmaLink: "https://www.figma.com/design/VM0npQm1Q3JvWDmSTts04u/ID-Card-Design-Templates---ID-Card-Design--Community-?node-id=3-536&p=f&t=M1BlAmQWP4xcdrnk-0", 
+    liveLink: "https://www.figma.com/proto/GEYhbkIcKKGiudxciAUYP0/UAS-Desain-Antarmuka?node-id=111-2960&p=f&t=bePeLDNQYtKZJqUn-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=67%3A111", 
+  },
+
   // Data & ML - 8 projects
   {
-    id: 6,
+    id: 8,
     title: "Sales Analysis Dashboard",
     des: "A complete sales data analysis project featuring insights, visualizations, and performance metrics.",
     img: "/p9_Analisis.svg",
@@ -167,7 +182,7 @@ export const projects = [
     liveLink: "https://public.tableau.com/app/profile/misbahul.munir1675/viz/Sales-Analysis_17546619194890/Dashboard1",              // Contoh - ganti dengan link live
   },
   {
-    id: 7,
+    id: 9,
     title: "Corn Leaf Disease Detection (Streamlit App)",
     des: "A Streamlit app that classifies corn leaf diseases using machine learning and image analysis.",
     img: "/p10_Diseases.svg",
@@ -178,7 +193,7 @@ export const projects = [
     liveLink: "https://public.tableau.com/app/profile/misbahul.munir1675/viz/Sales-Analysis_17546619194890/Dashboard1",              // Contoh - ganti dengan link live
   },
   {
-    id: 8,
+    id: 10,
     title: "RAG-Based Information Retrieval System CLI",
     des: "A Retrieval-Augmented Generation system using embeddings and vector search for precise document responses.",
     img: "/p11_rag_news.svg",
@@ -189,7 +204,7 @@ export const projects = [
     liveLink: "",              // Contoh - ganti dengan link live
   },
   {
-    id: 9,
+    id: 11,
     title: "Telegram Automation Bot",
     des: "A functional Telegram bot for automated messaging, alerts, and custom command handling.",
     img: "/p12_Bottele.svg",
@@ -200,7 +215,7 @@ export const projects = [
     liveLink: "",              // Contoh - ganti dengan link live
   },
   {
-    id: 10,
+    id: 12,
     title: "Indodax Crypto Mining Dashboard",
     des: "A simple dashboard that fetches Indodax API data, displays price analytics, and monitors market movements.",
     img: "/p13_miningindo.svg",
@@ -211,7 +226,7 @@ export const projects = [
     liveLink: "",              // Contoh - ganti dengan link live
   },
   {
-    id: 11,
+    id: 13,
     title: "Bitcoin Price Forecasting Model",
     des: "A time-series forecasting project using statistical models and sentiment analysis to predict Bitcoin prices.",
     img: "/p14_btcForcasting.svg",

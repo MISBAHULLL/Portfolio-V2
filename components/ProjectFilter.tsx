@@ -17,6 +17,7 @@ interface Project {
   link: string;
   category: string;
   githubLink?: string;  // Link ke repository GitHub
+  figmaLink?: string;   // Link ke Figma design
   liveLink?: string;    // Link ke live site
 }
 
@@ -235,10 +236,10 @@ const ProjectFilter: React.FC<ProjectFilterProps> = ({ projects }) => {
                   className="z-10 absolute bottom-0"
                 />
                 
-                {/* GitHub Overlay - muncul saat hover */}
-                {item.githubLink && (
+                {/* Project Link Overlay - muncul saat hover */}
+                {(item.githubLink || item.figmaLink) && (
                   <a
-                    href={item.githubLink}
+                    href={item.figmaLink || item.githubLink}
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={(e) => e.stopPropagation()}
@@ -246,9 +247,15 @@ const ProjectFilter: React.FC<ProjectFilterProps> = ({ projects }) => {
                   >
                     <div className="flex flex-col items-center gap-3 transform scale-90 group-hover/card:scale-100 transition-transform duration-300">
                       <div className="w-16 h-16 lg:w-20 lg:h-20 bg-white/10 backdrop-blur-sm rounded-full flex items-center justify-center border-2 border-white/30 hover:border-purple hover:bg-purple/20 transition-all">
-                        <img src="/git.svg" alt="GitHub" className="w-8 h-8 lg:w-10 lg:h-10" />
+                        <img 
+                          src={item.figmaLink ? "/figma.svg" : "/git.svg"} 
+                          alt={item.figmaLink ? "Figma" : "GitHub"} 
+                          className="w-8 h-8 lg:w-10 lg:h-10" 
+                        />
                       </div>
-                      <span className="text-white text-sm lg:text-base font-medium">View on GitHub</span>
+                      <span className="text-white text-sm lg:text-base font-medium">
+                        {item.figmaLink ? "View on Figma" : "View on GitHub"}
+                      </span>
                     </div>
                   </a>
                 )}
